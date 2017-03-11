@@ -2,9 +2,11 @@
 # LDR manager - Light Dependdent Resistor
 # Revision:
 # 2017-01-29: Adding timestampt to live output
-# -- TODO : log file append, not rewrite in while cycle
-# -- 		- if log file does not exist touch it
-# 		- log name variable
+# --  log file append, not rewrite in while cycle = COMPLETED
+# -- 	- if log file does not exist touch it = COMPLETED
+# 	- log name variable = COMPLETED 
+# TODO : 
+# - add user input if append or wipe log file in case it exists
  
 
 import os
@@ -50,9 +52,9 @@ while True:
 		GetDateTime = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 		LDRReading = RCtime(3)
 		#print str(GetDateTime) + RCtime(3)
-		print "Debug 1 : print GetDateTime"
+		#print "Debug 1 : print GetDateTime"
 		print GetDateTime
-		print "Debug 2 : print RCtime(3)"
+		#print "Debug 2 : print RCtime(3)"
 		print RCtime(3)
 
 		# Open logfile for appending

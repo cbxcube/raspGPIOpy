@@ -3,6 +3,7 @@
 # Revision:
 # 2017-01-29: Adding timestamp to output - import "os"
 # 
+# TODO: -add counter of motion (cnt=0, in loop cnt+1)
 
 
 import RPi.GPIO as GPIO
